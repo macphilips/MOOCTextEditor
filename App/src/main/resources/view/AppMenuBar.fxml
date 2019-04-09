@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.VBox?>
+<MenuBar xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="application.AppMenuBar"
+         prefHeight="400.0" prefWidth="600.0" VBox.vgrow="NEVER">
+    <menus>
+        <Menu mnemonicParsing="false" text="File">
+            <items>
+                <Menu id="menu_bar_new" mnemonicParsing="false" text="New">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Project"/>
+                        <MenuItem mnemonicParsing="false" text="Project from Exiting Source..."/>
+                        <Menu mnemonicParsing="false" text="Project from Version Control">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Github"/>
+                            </items>
+                        </Menu>
+                        <SeparatorMenuItem mnemonicParsing="false"/>
+                        <MenuItem mnemonicParsing="false" text="Module..."/>
+                        <MenuItem mnemonicParsing="false" text="Module from Exiting Source..."/>
+                    </items>
+                </Menu>
+                <MenuItem id="mniOpen" fx:id="file_open" mnemonicParsing="false" text="Open…"/>
+                <Menu mnemonicParsing="false" text="Open Recent"/>
+                <MenuItem mnemonicParsing="false" text="Close Project"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Settings..."/>
+                <MenuItem mnemonicParsing="false" text="Project Stucture...">
+                    <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <Menu mnemonicParsing="false" text="Other Settings...">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Default Settings..."/>
+                    </items>
+                </Menu>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Import Settings..."/>
+                <MenuItem mnemonicParsing="false" text="Export Settings..."/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Save All"/>
+                <MenuItem mnemonicParsing="false" text="Synchronize"/>
+                <MenuItem mnemonicParsing="false" text="Invalidate Caches/Restart"/>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Exit"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                <MenuItem fx:id="menu_undo" mnemonicParsing="false" text="Undo">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <MenuItem fx:id="menu_redo" mnemonicParsing="false" text="Redo">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="DOWN" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Cut">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Copy">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Paste">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Delete">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="ANY"/>
+                    </accelerator>
+                </MenuItem>
+                <SeparatorMenuItem mnemonicParsing="false"/>
+                <MenuItem mnemonicParsing="false" text="Select All">
+                    <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                    </accelerator>
+                </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Unselect All"/>
+            </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Build">
+
+            <MenuItem mnemonicParsing="false" text="Build Project"/>
+            <MenuItem mnemonicParsing="false" text="Build Module"/>
+            <SeparatorMenuItem mnemonicParsing="false"/>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Run">
+
+        </Menu>
+        <Menu mnemonicParsing="false" text="Tools">
+
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+            <items>
+                <MenuItem mnemonicParsing="false" text="About MyHelloApp"/>
+            </items>
+        </Menu>
+    </menus>
+</MenuBar>

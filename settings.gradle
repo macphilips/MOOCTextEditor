@@ -1,0 +1,4 @@
+rootProject.name = 'MOOCTextEditor'
+include 'demo'
+include 'App'
+
